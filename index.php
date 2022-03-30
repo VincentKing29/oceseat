@@ -36,7 +36,7 @@
         <img id="logo_accueil" src="img/O'CESEAT.png">
         <div id="container_recherche">
             <input type="search" name="search" id="searchbar_accueil" placeholder="Votre recherche... (ex: kebab, fastfood...)" required>
-            <input type="submit" id="submit" placeholder="oui">
+            <button type="submit" id="submit" value=""><img src="img/arrow-research.svg" alt=""></button>
         </div>
     </main>
 </body>
