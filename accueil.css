@@ -1,0 +1,21 @@
+#logo_accueil{
+    /* Logo accueil */
+    height: 280px;
+    margin: 10px auto;
+    display: block;
+}
+
+#container_recherche {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+#searchbar_accueil {
+    width: min(300px,70vw);
+    height: 50px;
+}
+
+#submit {
+    width: min(50px,20vw);
+}
