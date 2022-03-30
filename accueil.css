@@ -1,8 +1,9 @@
 #logo_accueil{
     /* Logo accueil */
-    height: 280px;
+    height: 100%;
     margin: 10px auto;
     display: block;
+    width: min(100%,280px);
 }
 
 #container_recherche {

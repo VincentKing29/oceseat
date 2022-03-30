@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscription - CesEAT</title>
+    <title>Inscription - CESeat</title>
     <link rel="stylesheet" href="inscription.css">
     <link rel="stylesheet" href="../commun.css">
 </head>
@@ -69,6 +69,21 @@
         </div>
 
     </main>
-    
 </body>
+<script>
+window.onload = function() {
+    document.getElementById("bouton_camembert").addEventListener("click",openSousMenu);
+}
+function openSousMenu() {
+    document.getElementById("sous_menu").style.display = "block";
+    document.getElementById("bouton_camembert").removeEventListener("click",openSousMenu);
+    document.getElementById("bouton_camembert").addEventListener("click",closeSousMenu);
+}
+
+function closeSousMenu() {
+    document.getElementById("sous_menu").style.display = "none";
+    document.getElementById("bouton_camembert").removeEventListener("click",closeSousMenu);
+    document.getElementById("bouton_camembert").addEventListener("click",openSousMenu);
+}
+</script>
 </html>
