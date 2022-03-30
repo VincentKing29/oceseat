@@ -15,8 +15,32 @@
 #searchbar_accueil {
     width: min(300px,70vw);
     height: 50px;
+    border-radius: 15px 0 0 15px;
+    border: solid 2px #71ADA2;
+    padding: 0 0 0 8px;
+    font-size: 0.9em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    outline: none;
 }
 
 #submit {
     width: min(50px,20vw);
+    background-color: #71ADA2;
+    border: none;
+    height: 50px;
+    border-radius: 0 15px 15px 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+#submit img {
+    height: 75%;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(152deg) brightness(103%) contrast(103%);
+    margin: auto;
+    display: block;
+}
+
+#submit:hover {
+    background-color: #689e94;
 }
